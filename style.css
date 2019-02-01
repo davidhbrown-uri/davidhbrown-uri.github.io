@@ -1,0 +1,332 @@
+@charset "utf-8";
+@import "https://fontlibrary.org/face/lato";
+
+
+
+html {
+    background-color: #002147;
+    font-size: 100%;
+}
+
+body {
+    font-family: LatoMedium, Arial, Helvetica, sans-serif;
+}
+
+em,
+i {
+    font-family: LatoMediumItalic, Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+strong,
+b {
+    font-family: LatoBold, Arial, Helvetica, sans-serif;
+    font-weight: Bold;
+}
+
+em strong,
+strong em,
+em b,
+b em {
+    font-family: LatoBoldItalic, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #f2e0aa;
+}
+
+/*
+header {
+    position: fixed;
+    top: 0;
+    height:1.5rem;
+    z-index: 1000;
+}
+header + * {
+    margin-top: 1.5rem !important;
+}
+*/
+header,
+footer {
+    background-color: #c79316;
+    width: 100%;
+    min-height: 1.5em;
+}
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    :target {
+        padding-top: 1.5em;
+        /* clear sticky header */
+    }
+
+    header nav {
+        max-width: 55em;
+        margin: 0 auto;
+        padding: 0 1em;
+    }
+
+    header nav > ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav > ul > li {
+        padding: 0 1em;
+        margin: 0.1em 0;
+        border-left: medium solid #002147;
+        display: inline-block;
+    }
+
+    header nav > ul > li:last-of-type {
+        border-right: medium solid #002147;
+    }
+
+    header a {
+        text-decoration: none;
+        font-weight: bold;
+        background: inherit;
+    }
+
+    header a:focus,
+    header a:hover,
+    header a:active {
+        color: white;
+    }
+
+    main {
+        max-width: 45em;
+        min-width: 20em;
+        margin: 0 auto;
+        padding: 0.5em 1em;
+        background-color: white;
+        position: relative;
+    }
+
+    /* the first heading's top margin creates a gap between the header and the main */
+    main > h1:first-of-type {
+        margin-top: 0;
+    }
+
+    #headshot {
+        max-width: 20%;
+        min-width: 32px;
+        float: right;
+        /* undo the padding of main to hit the edge: */
+        position: relative;
+        top: -0.5em;
+        right: -1em;
+        border-left: solid 2px #002147;
+        border-bottom: solid 2px #002147;
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    img.wrapright {
+        float: right;
+        margin-left: 0.5em;
+    }
+
+    .clearboth {
+        clear: both;
+    }
+
+    p {
+        margin-bottom: 0.5em;
+        line-height: 160%;
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
+
+    blockquote {
+        padding-left: 2em;
+        font-size: 90%;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: #002147;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0) 85%, #d0a627 95%);
+        text-decoration: none;
+    }
+
+    a:focus,
+    a:hover,
+    a:active {
+        color: #806820;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #002147;
+        margin-top: 1em;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-weight: normal;
+    }
+
+    h1 {
+        width: 80%;
+        border-bottom: solid 3px #002147;
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    h4,
+    h5,
+    h6 {
+        font-weight: bold;
+    }
+
+    ul,
+    ol {
+        margin-left: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    table {
+        background-color: #ccc;
+        border-radius: 0 0 5px 5px;
+        margin-top: 0;
+    }
+    td, th  {
+        padding: 2px 1em;
+        margin: 3px;
+        border-radius: 5px;
+    }
+    td {
+        background-color: #eee;
+    }
+    th {
+        background-color: #ddd;
+        font-weight: normal;
+    }
+    th.empty, td.empty {
+        background-color: #ccc;
+    }
+    caption {
+        background-color: #ccc;
+        font-weight: bold;
+        font-size: 80%;
+        border-radius: 5px 5px 0 0;
+        text-align: left;
+        margin: 0;
+        padding: 2px 1em 4px;
+    }
+
+
+    @media only screen and (max-width: 640px) {
+
+        header,
+        footer {
+            display: none;
+        }
+
+        main {
+            padding: 0 0.2em;
+            margin: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+            padding: 0.2em;
+        }
+
+        h1 {
+            width: 100%;
+            background: linear-gradient(to right, #d0a627, #d0a627 75%, white);
+            font-size: 150%;
+            font-weight: bold;
+            border: none;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 125%;
+            background: linear-gradient(to right, #d0a627, #d0a627 50%, white);
+        }
+
+        h3 {
+            font-size: 100%;
+            background: linear-gradient(to right, #d0a627, #d0a627 25%, white);
+        }
+    }
+
+    @media print {
+
+        html,
+        body,
+        main,
+        h1,
+        h2,
+        h3,
+        em strong,
+        strong em,
+        em b,
+        b em {
+            background: none;
+        }
+
+        a {
+            text-decoration: none;
+            /* huh, that wasn't the underline... */
+            border: none;
+            /* no, not that either */
+            background: none;
+            /* that was it! */
+        }
+
+        h2 + p,
+        h3 + p,
+        h2 + h3 {
+            page-break-before: avoid;
+        }
+
+        header,
+        footer {
+            display: none;
+        }
+
+        main {
+            max-width: inherit;
+            padding: 0;
+        }
+
+        #headshot {
+            position: static;
+            border: solid 2px gray;
+            filter: grayscale(1) contrast(1.3) brightness(1.2);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: black;
+        }
+    }

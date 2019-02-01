@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COM 372: Dynamic Web Design and Programming</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">-DHB-</a></li>
+            <li><a href="#content">Course Content</a></li>
+            <li><a href="#book">&ldquo;Textbook&rdquo;</a></li>
+            <li><a href="#permission">Permission of Instructor</a></li>
+            <li><a href="#ready">Get Ready!</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <h1>COM 372 / CSC 372: Dynamic Web Design and Programming</h1>
+    <h3>The official course description from the catalog</h3>
+    <blockquote>LEC: (4 crs.) Leading edge Web-based information technology for
+        communication in all disciplines. Technology will vary by semester,
+        covering Microsoft or Open Source server-side programming
+        technologies and databases, and relevant design and security issues.
+        (Lec. 2, Lab. 4) Pre: COM 271 and junior standing in a degree-granting
+        college or <a href="#permission">permission of instructor</a>.
+    </blockquote>
+    <nav>
+        Jump to:
+        <ul>
+            <li><a href="#book">&ldquo;Textbook&rdquo;</a></li>
+            <li><a href="#permission">Permission of Instructor</a></li>
+            <li><a href="#ready">Get Ready!</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <h2>What is covered in the course?</h2>
+        <p>
+            I think of this as the &ldquo;server side&rdquo; course with 271 being the &ldquo;client side.&rdquo;
+            Here, the primary focus of our effort is in designing and developing the software that runs on a web
+            server, where in 271, we focused on the web browser (client).
+        <p> Notice the
+            word &ldquo;Dynamic&rdquo; in the course title. The web pages we write in 271 pretty much
+            always have the same content and behavior; they are static, unchanging,the same every time you load that
+            page.
+            The programs on a server can create dynamic, changing content, uniquely responding to each request.
+        <h3>Key technologies and topics</h3>
+        <ul>
+            <li>Programming language: JavaScript (ES2015), event-driven asynchronous programming</li>
+            <li>Web Server: <a href="https://nodejs.org/en/">Node.js</a> / <a href="http://expressjs.com/en/index.html">Express</a>
+            </li>
+            <li>Semantic templates: Mustache or preferably <a href="http://handlebarsjs.com/">Handlebars.js</a></li>
+            <!--<li>Server Platform: <a href="https://www.docker.com/">Docker</a></li>-->
+            <!--<li>Relational Database: <a href="http://dev.mysql.com/">MySQL</a> (not everything has to change! or MariaDB? or PostgreSQL?)</li>-->
+            <li>JSON</li>
+            <li>REST</li>
+            <li>Authentication / authorization</li>
+            <li>NoSQL Database: <a href="https://www.mongodb.org/">MongoDB</a></li>
+            <li>Relational database: SQLite or maybe MySQL</li>
+            <!--<li>CSS Preprocessing: <a href="http://lesscss.org/">{less}</a> (or sass?)</li>-->
+            <!--<li>Build management: <a href="https://www.npmjs.com/">npm</a> for sure, maybe <a
+                    href="http://gruntjs.com/">grunt</a>
+            </li> -->
+            <!--<li>Source code management: <a href="https://git-scm.com/">git</a> (yes, even for solo developers!) </li>-->
+            <li>Client-side framework: <a href="https://jquery.com/">jQuery</a>,
+                probably also <a href="https://getbootstrap.com/">Bootstrap</a>
+            </li>
+            <li>IDE: <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> from JetBrains
+                (free Academic license available).
+            </li>
+            <!--<li>Once we've implemented a RESTful API ourselves, we might try <a href="http://loopback.io/">LoopBack</a></li>-->
+        </ul>
+        <!--<p>This is a lot to take on in 13 weeks, but I think we can manage -->
+        <!--most of it! It should be fun to try, anyway :-) I may have to drop some things;-->
+        <!--there may be great ideas I haven't thought of yet.</p>-->
+        <h3>Classroom style</h3>
+        <p>The class time will be dominated by lab-style
+            work, with instruction from me interjected as needed. To make it easier to keep working
+            after class/lab ends, I encourage you to use your own notebook computer which you should bring every class
+            period. If you would like to borrow a notebook computer, loaner equipment is available.</p>
+        <!--See Docker's installation instructions for <a href="https://docs.docker.com/installation/mac/">Mac OS X</a> -->
+        <!--and <a href="https://docs.docker.com/installation/windows">Windows</a> for details.</p>-->
+    </section>
+    <section id="book">
+        <h2>Textbooks</h2>
+        <p>You'll see at the URI bookstore site that I have &ldquo;recommended&rdquo; two books to assist you in this
+            course.
+            These are &ldquo;real&rdquo; books as much or more than they are textbooks, with the advantage that each is
+            under $25 new on Amazon! If you are able, I hope you can purchase both, but especially:</p>
+
+        <h3><img src="LearningNodeJS-Cover.PNG" class="wrapright" style="width: 10em;">Learning Node.js</h3>
+        <blockquote><strong>Strongly recommended:</strong> Wandschneider, Marc. <i>Learning Node.js: A Hands-On Guide to
+            Building Web Applications in JavaScript&reg;</i>
+            (Second Edition). Copyright &copy; 2017 Pearson Education, Inc. ISBN-13: 978-0-134-66370-8
+        </blockquote>
+        <p>In the first several weeks of this course, we'll be following the presentation of Node from this book.
+            I like it because it does a good job covering some important fundamentals, including asynchronous
+            programming, and writing/using Node modules. I believe that this more careful, step-by-step introduction of the
+            underlying technologies and concepts behind Node and Express will help you master this complicated subject matter more
+            easily. However, its presentation of many important functions of a dynamic web site seems to assume you've created
+            such sites before and mostly just points you to the appropriate Express modules without explaining much about
+            why.
+        </p>
+        <p>A sample (Chapter 3: Asynchronous Programming) is available from the publisher:
+            <a href="http://ptgmedia.pearsoncmg.com/images/9780134663708/samplepages/9780134663708.pdf">
+                http://ptgmedia.pearsoncmg.com/images/9780134663708/samplepages/9780134663708.pdf</a></p>
+
+        <h3><img src="WebDevNodeExpress-Cover.PNG" class="wrapright clearboth" style="width: 10em;">
+            Web development with Node.js &amp; and Express</h3>
+        <blockquote><strong>Recommended:</strong> Brown, Ethan. <i>Web Development with Node & Express: Leveraging the
+            JavaScript Stack.</i> Copyright &copy; 2014; Published by O'Reilly Media Inc. ISBN-13: 978-1-491-94930-6
+        </blockquote>
+        <p>This book starts quickly leaving some of the fundamentals for you to discover (or not) along the way.
+            It goes beyond just showing how to do something in Express to also explain why and so does a better job as
+            a first book for learning dynamic web developemnt.
+        </p>
+        <p>The first edition -- a second edition
+            is planned to fix some of this but is not yet released (Jan 2018) -- includes valuable and appropriate
+            sections on using source code management (git), automating testing. However, their presentation
+            as their own chapters seemed to get in the way and interrupted the flow of the course. There are also useful
+            chapters on debugging, deployment (&ldquo;Going Live&rdquo;), and maintenance that you will need to know at
+            some point, but they didn't fit within a semester.</p>
+    </section>
+    <section id="permission">
+        <h2>How do I get permission to take the course?</h2>
+        <p>I will be happy to grant permission to students who have acquired
+            web design and programming skills apart from classwork or in classes other than COM 271 / CSC 271.
+            <em>Please email me, <a href="mailto://david_h_brown@uri.edu">david_h_brown@uri.edu</a>,
+                specifying whether you wish
+                to enroll in <strong>COM or CSC</strong>372 and also include a brief description of
+                your prior experience</em> in any or all of the following areas:</p>
+        <h3>Expected HTML skills and knowledge</h3>
+        <p>You should be able to encode a document's structure and textual content in HTML 5, including...
+        <ul>
+            <li>create and modify pages by editing HTML code directly, without relying on a
+                WYSIWIG editor (Dreamweaver, BlueGriffon) or template system (Google Pages, WordPress).
+            </li>
+            <li>validate your code and fix any issues</li>
+            <li>use semantic elements when appropriate such as main, header, nav, and aside</li>
+            <li>create forms with client-side validation of data</li>
+            <li>know the meanings of terms such as tag, element, attribute, entity, ID, class,
+                document, ...
+            </li>
+        </ul>
+        <h3>Expected CSS skills and knowledge</h3>
+        <p>You should be able to style a page using CSS Level 3, knowing how to ...
+        <ul>
+            <li>style selected elements in the DOM using selectors, including pseudo-classes and
+                pseudo-elements,
+                descendants and siblings, and specificity
+            </li>
+            <li>apply colors and borders, format text, block model (margin vs padding), and positioning</li>
+            <li>create a fluid design with relative units and responsive layouts with <code>@media</code></li>
+            <li>apply animated transitions to elements</li>
+        </ul>
+        <h3>Expected programming skills and knowledge</h3>
+        <p>You should have some prior experience programming and know about...
+        <ul>
+            <li>expressions, assignment, variables</li>
+            <li>flow control (if, for)</li>
+            <li>functions: declaring, parameters, calling a function, returning a value, scope.
+                <blockquote>
+                    Node, and Express make extensive use of
+                    anonymous functions, functions as data values, callbacks, promises, and closures. You
+                    may
+                    not
+                    have seen these techniques yet (some are covered in CSC 301), and to be honest, they can
+                    make your head
+                    spin a bit.
+                    If you're pretty sure you've got all the other skills I list here, reading up on
+                    promises
+                    and
+                    closures
+                    could be helpful.
+                </blockquote>
+            <li>JavaScript-specific:
+                <ul>
+                    <li>Object essentials (object = bundle of named properties; how to access properties)</li>
+                    <li>jQuery basics</li>
+                </ul>
+        </ul>
+        <p>If you are missing some of this background, I will probably still give you a permission number if you ask,
+            but only on the condition that you promise do additional work to help get yourself ready.
+            Choose from options in the next section or others you might find online.
+        <p>Most students I've talked to sound like they ought to
+            spend between 30 and 80 hours filling in gaps. It can be a substantial amount of work and needs to be taken
+            almost as seriously as if you were enrolled in a class. You are welcome to email me questions to get
+            help along the way.</p>
+        <p>I do not have any sort of placement exam to assess your preparedness for this course.
+            <strong><em>Giving you a permission number is not a promise that you will succeed.</em></strong>
+            I hope you will, but it's up to
+            you to keep track of how you're doing, both while doing any prep/review and especially in the first few
+            weeks while you might still switch to another course.</p>
+    </section>
+    <section id="ready">
+        <h2>How can I get ready?</h2>
+        <p>If you have not yet acquired one of these skills or if you just want a refresher, there is a huge
+            amount of of free online training available. Here are a few:
+        <p><a href="https://www.khanacademy.org/">Khan Academy</a> is a not-for-profit. While their lessons can
+            sometimes be aimed at a middle-to-high-school learner, don't let that fool you. The content is top notch.
+        <p><a href="https://www.codecademy.com/">Codecademy</a> is more clearly taking a professional approach, as you
+            can tell from the price
+            tags associated with some of their offerings. You can ignore those and stick with the free lessons, but
+            they've been putting more and more of their content behind the &ldquo;paywall.&rdquo;
+        <p><a href="https://www.coursera.org/">Coursera</a> offers much greater depth, with college-level courses on
+            many topics, including web development. Not all are
+            free, and not all content is available on-demand, so keep an eye out for when courses start.
+        </p>
+        <p><a href="https://www.w3schools.com/">w3schools.com</a> covers all these topics, too, with substantial
+            amounts of material available free-of-charge.</p>
+        <p>Here are some specific suggestions to get you started. It should cover enough of the basics, but
+            I encourage you to seek out more.
+        <h3>HTML and CSS</h3>
+        <h4>Khan Academy</h4>
+        <ul>
+            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">
+                Intro to HTML/CSS: Making webpages</a></li>
+        </ul>
+        <h4>w3schools</h4>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/default.asp">HTML Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS Tutorial</a></li>
+        </ul>
+        <h4>Codecademy</h4>
+        <ul>
+            <li><a href="https://www.codecademy.com/learn/learn-html">Learn HTML</a></li>
+            <li><a href="https://www.codecademy.com/learn/learn-css">Learn CSS</a></li>
+        </ul>
+        <h3>Programming in JavaScript</h3>
+        <h4>Codecademy</h4>
+        <p>Codecademy's JS courses are bit more relevant to this course than Khan Academy's. Their introduction
+            includes brief mentions of some of the differences in JavaScript versions, the module system, and even
+            Ajax.</p>
+        <ul>
+            <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">Introduction to JavaScript</a>
+            </li>
+            <li><a href="https://www.codecademy.com/learn/learn-jquery">Introduction to jQuery</a></li>
+        </ul>
+        <h4>Kahn Academy</h4>
+        <p>This JavaScript introduction is a better choice if you have never programmed before. They use a
+            JavaScript library called Processing that lets you play with some graphics and make simple games.</p>
+        <ul>
+            <li><a href="https://www.khanacademy.org/computing/computer-programming/programming">
+                Intro to JS: Drawing & Animation</a></li>
+            <li><a href="https://www.khanacademy.org/computing/computer-programming/html-js-jquery">
+                HTML/JS: Making webpages interactive with jQuery</a></li>
+        </ul>
+        <h4>You Don't Know JS (book series)</h4>
+        <p>With extensive help from an extensive open-source community, Kyle Simpson has written and released a free
+            series of short books on modern JavaScript. You can purchase physical or eBook copies (which benefit from
+            additional
+            editing and production, or you can just read them on github.</p>
+        <ul>
+            <li><a href="https://github.com/getify/You-Dont-Know-JS">The complete YDKJS series on github</a> is
+                free to read online... just scroll down a bit to get past the github-specific stuff.
+            </li>
+            <li><a href="https://www.ebooks.com/1993212/you-don-t-know-js-up-going/simpson-kyle/">You Don't Know JS: Up
+                &amp; Going</a>
+                is free in its published e-Book form, too. You can also get it from Amazon, but be aware that Kindle
+                devices (specifically my cheap Fire tablets) do not seem to support the bold and italic fixed-width
+                fonts
+                used in some places.
+            </li>
+        </ul>
+        <h4>w3schools</h4>
+        <ul>
+            <li><a href="https://www.w3schools.com/js/default.asp">JavaScript Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/jquery/default.asp">jQuery Tutorial</a></li>
+            <li><a href="https://www.w3schools.com/nodejs/default.asp">Node.js Tutorial</a></li>
+        </ul>
+    </section>
+</main>
+<footer>&nbsp;</footer>
+
+</body>
+</html>
