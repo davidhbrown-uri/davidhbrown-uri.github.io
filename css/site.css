@@ -1,0 +1,30 @@
+/* 
+    Created on : Dec 14, 2015, 10:26:30 AM
+    Author     : David
+*/
+html {
+    padding: 0 1em;
+}
+body {
+    max-width: 50em;
+    margin: 0 auto;
+}
+/* 1 */
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 1em 0 0.5em 0; 
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* 2 */
+p + p {
+    margin-top: 0.5em;
+}
+
+ul {
+    margin-top: 0;
+    padding-top: 0;
+}
